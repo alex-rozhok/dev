@@ -1,0 +1,52 @@
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+body{padding:0;margin:0;
+}
+
+.block {
+  width: 80%;
+  height: 100px;
+  background: #ccc;
+}
+
+.right .block {
+  margin: 20px 10%; 
+}
+
+.left,
+.right {
+  width: 50%;
+  min-height: 10px;
+  position: relative
+}
+
+.left div{
+  box-sizing: border-box;
+  border: 2px solid red;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.b {
+  height: 100px;
+}
+
+.left .fixed {
+  position: fixed;
+  width: 50%;
+  top: 0;
+}
+
+.left .bottom {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  width: 100%;
+
+}
+
+.right+.b {
+  height: 1000px;
+}
